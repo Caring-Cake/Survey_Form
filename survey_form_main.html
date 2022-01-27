@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="survey_form_style.css">
+</head>
+<body>
+  <h1 id="title" style="text-align:center;">
+    Health Survey
+  </h1>
+  <p id="description" style="text-align:center;">
+    This is a quick survey to advise you on your living habits.
+  </p>
+<div id="box">
+  <form id="survey-form">
+    <p style="text-align:center;">First some basic info</p>
+    <label for="name" id="name-label">Name:</label>
+    <br>
+    <input type="text" id="name" name="name" required placeholder="Enter your name here" style="width:96%;">
+    <br><br>
+    <label for="email" id="email-label">Email:</label>
+    <br>
+    <input type="email" id="email" name="email" required placeholder= "Enter your email here" style="width:96%;">
+    <div>
+      <p>Gender:</p>
+      <input type="radio" value="male" name="gender" id="male">
+      <label for="male">Male</label>
+      <br>
+      <input type="radio" value="female" name="gender" id="female">
+      <label for="female">Female</label>
+      <br>
+      <input type="radio" value="enby" name="gender" id="enby">
+      <label for="enby">Non-binary</label>
+      <br>
+      <input type="radio" value="rns" name="gender" id="rns" checked>
+      <label for="rns">Rather not say</label>
+      
+    </div>
+    <br>
+    <label for="number" id="number-label">Age:</label>
+    <br>
+    <input type="number" id="number" name="age" min="18" max="99" required placeholder="Enter your age here" style="width:96%;">
+  
+    <p style="text-align:center;">Now some medical questions.</p>
+    <label for="dropdown" id="dropdown-label">Blood Type:</label>
+    <select id="dropdown" name="blood-type" required>
+      <option disabled selected value>Select blood type:</option>
+      <option value="A">A</option>
+      <option value="A+">A+</option>
+      <option value="AB">AB</option>
+      <option value="AB+">AB+</option>
+      <option value="B">B</option>
+      <option value="B+">B+</option>
+      <option value="O">O</option>
+      <option value="O+">O+</options>
+    </select>
+    <div>
+      <p>Do you take any of the following prescription medications?</p>
+      <input type="checkbox" id="hydrocodone" name="hydrocodone">
+      <label for="hydrocodone">Hydrocodone</label>
+      <br>
+      <input type="checkbox" id="statins" name="statins">
+      <label for="statins">Statins</label>
+      <br>
+      <input type="checkbox" id="lisinopril" name="lisinopril">
+      <label for="lisinopril">Lisinopril</label>
+      <br>
+      <input type="checkbox" id="synthroid" name="synthroid">
+      <label for="synthroid">Synthroid</label>
+      <br>
+      <input type="checkbox" id="prilosec" name="prilosec">
+      <label for="prilosec">Prilosec</label>
+      <br>
+      <input type="checkbox" id="amoxicillin" name="amoxicillin">
+      <label for="amoxicillin">Amoxicillin</label>
+      <br>
+      <input type="checkbox" id="glucophage" name="glucophage">
+      <label for="glucophage">Glucophage</label>
+    </div>
+    <div>
+      <p>Anything else you want to add?</p>
+      <textarea name="comment" placeholder="Comment here..." id="comment" style="width:96%;"></textarea>
+    </div>
+    <br>
+    <input type="submit" name="submit" id="submit">
+  </form>
+  <br>
+<p> Disclaimer: This is not a real health survey. This was an exercise in web development.</p>
+  <br>
+</div>
+</body>
