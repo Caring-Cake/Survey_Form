@@ -1,0 +1,24 @@
+body{
+  background-image: url(https://i.ibb.co/QmQ6xrZ/058-B25-CD-F952-4-F73-A284-BEE7946569-A9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#box{
+  background-color:white;
+  width:50%;
+  margin-left:25%;
+  border:solid;
+  display:block;
+  padding-left:1vw;
+  padding-right:1vw;
+}
+@media screen and (max-width: 600px) {
+  #box{
+    margin-left:3%;
+    width: 90%;
+    padding-left:5px;
+    padding-right:10px;
+  }
+  body{
+  }
+}
